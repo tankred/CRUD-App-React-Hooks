@@ -1,4 +1,10 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# vi user
+.gitignore~
+*.un~
+*.swp
+*.js~
+*.css~
 
 # dependencies
 /node_modules
