@@ -1,9 +1,28 @@
 import React from 'react';
 
-const App = () => {
+function Greeting() {
   return (
+    <div class="greeting">
+      <h1>Hello React</h1>
+    </div>
+  )
+}
+
+function GreetingApp () {
+  return ( // return JSX
+  <div>
+      <Greeting /> 
+      <div>
+        <Greeting />
+      </div>
+    </div>
+  )  
+}
+
+const App = () => {
+  return ( // return JSX
     <div className="container">
-      <h1>CRUD App with Hooks</h1>
+      <h2>CRUD App with Hooks</h2>
       <div className="flex-row">
         <div className="flex-large">
           <h2>Add user</h2>
