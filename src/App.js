@@ -1,9 +1,12 @@
 import React from 'react';
 
+// info https://pbs.twimg.com/media/EE6EZxyX4AE7_rF?format=jpg&name=small
+// Regular function, starts with capital letter
 function Greeting() {
-  return (
+  const name = "React"
+  return ( // return JSX // Anything between curly braces will be executed as JS 
     <div class="greeting">
-      <h1>Hello React</h1>
+      <h1>Hello {name}</h1>
     </div>
   )
 }
