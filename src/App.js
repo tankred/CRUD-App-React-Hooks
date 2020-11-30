@@ -2,7 +2,7 @@ import React from 'react';
 
 // info https://pbs.twimg.com/media/EE6EZxyX4AE7_rF?format=jpg&name=small
 // Regular function, starts with capital letter
-function Greeting() {
+function Greeting() { // define the component Greeting
   const name = "React"
   return ( // return JSX // Anything between curly braces will be executed as JS 
     <div class="greeting">
@@ -14,7 +14,7 @@ function Greeting() {
 function GreetingApp () {
   return ( // return JSX
   <div>
-      <Greeting /> 
+      <Greeting /> // Use Greeting component in another component
       <div>
         <Greeting />
       </div>
