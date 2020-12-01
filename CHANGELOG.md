@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.4] - 2020-12-01
+### Changed
+- Add props
+
 ## [0.2.3] - 2020-11-30
 ### Changed
 - Add function Greetings
