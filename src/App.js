@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react'; // import useState from React
 
 // Data that comes in from the outside of a component is called "props" (properties)
 // This can be passed from a parent to a child through JSX attributes
@@ -9,11 +9,17 @@ import React from 'react';
 //
 // Regular function, starts with capital letter
 function Greeting(props) { // define the component Greeting
-  //const name = "React"
+  const [count, setCount] = useState(0) // call useState and pass in a default value
+  // useState returns the current value and an update function
+  const updateCount = () => {
+    setCount(count + 1)
+  }
   // now w use props
   return ( // return JSX // Anything between curly braces will be executed as JS 
     <div class="greeting">
       <h1>Hello {props.name}</h1>
+      <p>you clicked {count} times</p>
+      <button onClick={updateCount}>click me</button>
     </div>
   )
 }

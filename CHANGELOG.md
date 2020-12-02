@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.5] - 2020-12-02
+### Changed
+- Use state
+
 ## [0.2.4] - 2020-12-01
 ### Changed
 - Add props
