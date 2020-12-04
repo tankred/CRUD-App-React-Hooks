@@ -12,10 +12,15 @@ function Greeting(props) { // define the component Greeting
   const [count, setCount] = useState(0) // call useState and pass in a default value
   // useState returns the current value and an update function
   const updateCount = () => {
+    // call the update function with the new value
+    // never set the value directly
     setCount(count + 1)
   }
   // now w use props
   return ( // return JSX // Anything between curly braces will be executed as JS 
+    // count will update automatically
+    // set onclick attribute of button to custom function
+    // use curly braces to set onclick attribute to JS value
     <div class="greeting">
       <h1>Hello {props.name}</h1>
       <p>you clicked {count} times</p>
