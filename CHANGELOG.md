@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.7] - 2020-12-07
+### Changed
+- Make lists of things by looping over an array of data with `map`
+
 ## [0.2.6] - 2020-12-04
 ### Changed
 - When state or props change, your component updates automatically

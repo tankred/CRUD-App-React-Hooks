@@ -4,6 +4,14 @@ import React, { useState } from 'react'; // import useState from React
 // This can be passed from a parent to a child through JSX attributes
 // Props come into function components as the first argument to the function.
 
+const DATA = [
+  { id: 4, title: 'A N H' },
+  { id: 5, title: 'E S B A N H' },
+  { id: 6, title: 'R J A N H' }
+]
+
+
+
 
 // info https://pbs.twimg.com/media/EE6EZxyX4AE7_rF?format=jpg&name=small
 //
@@ -40,24 +48,17 @@ function GreetingApp () {
   )  
 }
 
-const App = () => {
-  return ( // return JSX
-    <div className="container">
-      <h1> greetings </h1> 
-      <div>
-        <Greeting name="Akiko" />
-        <GreetingApp />
-      </div>
-      <h2>CRUD App with Hooks</h2>
-      <div className="flex-row">
-        <div className="flex-large">
-          <h2>Add user</h2>
-        </div>
-        <div className="flex-large">
-          <h2>View users</h2>
-        </div>
-      </div>
-    </div>
+const App = () => <MyList items={DATA} /> 
+
+function MyList(props) {
+  return (
+    <div> 
+      {
+	props.items.map(item => {
+	  return <p key={item.id}>{item.title}</p> 
+	})
+      }
+    < /div > 
   )
 }
 
