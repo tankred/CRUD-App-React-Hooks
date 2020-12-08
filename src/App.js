@@ -1,4 +1,5 @@
 import React, { useState } from 'react'; // import useState from React
+import "./index.css"
 
 // Data that comes in from the outside of a component is called "props" (properties)
 // This can be passed from a parent to a child through JSX attributes
@@ -11,8 +12,26 @@ const DATA = [
 ]
 
 
+function NormalCSS() {
+  return (
+    <p className="big-text"> 
+    T=Yellow Dandelion
+    </p>
+  )
+}
 
-
+function InlineStyle() {
+  return (
+    <p
+      style={{
+	fontSize: 20,
+	  color: "#0000ff"
+      }}
+    >
+      A=Joe Armon-Jones, Georgia Anne Muldrow
+    </p> 
+  )
+}
 // info https://pbs.twimg.com/media/EE6EZxyX4AE7_rF?format=jpg&name=small
 //
 // Regular function, starts with capital letter
@@ -48,7 +67,17 @@ function GreetingApp () {
   )  
 }
 
-const App = () => <MyList items={DATA} /> 
+// const App = () => <MyList items={DATA} /> 
+
+function App() {
+  return (
+    <div> 
+      <NormalCSS />
+      <InlineStyle></InlineStyle> 
+      <GreetingApp name="R" /> 
+    </div> 
+  )
+}
 
 function MyList(props) {
   return (
