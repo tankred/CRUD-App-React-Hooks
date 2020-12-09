@@ -58,8 +58,9 @@ function Greeting(props) { // define the component Greeting
 
 function GreetingApp () {
   return ( // return JSX
+  // Use Greeting component in another component
   <div>
-      <Greeting name="React" /> // Use Greeting component in another component
+      <Greeting name="React" /> 
       <div>
         <Greeting name="Akiko" />
       </div>
@@ -75,6 +76,7 @@ function App() {
       <NormalCSS />
       <InlineStyle></InlineStyle> 
       <GreetingApp name="R" /> 
+      <MyList items={DATA} /> 
     </div> 
   )
 }

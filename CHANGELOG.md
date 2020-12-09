@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.9] - 2020-12-09
+### Changed
+- Cleanup the codebase
+
 ## [0.2.8] - 2020-12-08
 ### Changed
 - Add styles as stylesheet and inline styles
