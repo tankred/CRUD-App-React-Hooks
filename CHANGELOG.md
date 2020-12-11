@@ -6,11 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Released]
+
 ## [0.3.1] - 2020-12-11
 ### Changed
 - npm audit fix --force
-
-## [Released]
 
 ## [0.3.0] - 2020-12-10
 ### Changed
