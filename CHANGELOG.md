@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Released]
 
+## [0.4.0] - 2020-12-14
+### Changed
+- Fix comments notation 
+### Added
+- AGPL v3 license
+
 ## [0.3.1] - 2020-12-11
 ### Changed
 - npm audit fix --force

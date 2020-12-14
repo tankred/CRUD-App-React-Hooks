@@ -32,8 +32,9 @@ function InlineStyle() {
     </p> 
   )
 }
+
 // info https://pbs.twimg.com/media/EE6EZxyX4AE7_rF?format=jpg&name=small
-//
+
 // Regular function, starts with capital letter
 function Greeting(props) { // define the component Greeting
   const [count, setCount] = useState(0) // call useState and pass in a default value
@@ -44,10 +45,16 @@ function Greeting(props) { // define the component Greeting
     setCount(count + 1)
   }
   // now w use props
-  return ( // return JSX // Anything between curly braces will be executed as JS 
+  return ( 
+    /* 
+    Multi
+    line
+    comment
+    // return JSX // Anything between curly braces will be executed as JS 
     // count will update automatically
     // set onclick attribute of button to custom function
     // use curly braces to set onclick attribute to JS value
+    */  
     <div class="greeting">
       <h1>Hello {props.name}</h1>
       <p>you clicked {count} times</p>
@@ -57,8 +64,9 @@ function Greeting(props) { // define the component Greeting
 }
 
 function GreetingApp () {
-  return ( // return JSX
-  // Use Greeting component in another component
+  return ( /* A JSX comment // return JSX
+    // Use Greeting component in another component
+    */
   <div>
       <Greeting name="React" /> 
       <div>
