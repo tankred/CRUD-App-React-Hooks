@@ -1,104 +1,49 @@
-import React, { useState } from 'react'; // import useState from React
+import React, { Component } from 'react' // import useState and Component from React
 import "./index.css"
 
-// Data that comes in from the outside of a component is called "props" (properties)
-// This can be passed from a parent to a child through JSX attributes
-// Props come into function components as the first argument to the function.
-
-const DATA = [
-  { id: 4, title: 'A N H' },
-  { id: 5, title: 'E S B A N H' },
-  { id: 6, title: 'R J A N H' }
-]
+import QuoteAndAuthor from './components/QuoteAndAuthor'
+import quotes from './QuoteDB'
 
 
-function NormalCSS() {
-  return (
-    <p className="big-text"> 
-    T=Yellow Dandelion
-    </p>
-  )
-}
+export default class App extends Component {
 
-function InlineStyle() {
-  return (
-    <p
-      style={{
-	fontSize: 20,
-	  color: "#0000ff"
-      }}
-    >
-      A=Joe Armon-Jones, Georgia Anne Muldrow
-    </p> 
-  )
-}
-
-// info https://pbs.twimg.com/media/EE6EZxyX4AE7_rF?format=jpg&name=small
-
-// Regular function, starts with capital letter
-function Greeting(props) { // define the component Greeting
-  const [count, setCount] = useState(0) // call useState and pass in a default value
-  // useState returns the current value and an update function
-  const updateCount = () => {
-    // call the update function with the new value
-    // never set the value directly
-    setCount(count + 1)
+  //state
+  state = {
+    quote: quotes[0].quote,
+    author: quotes[0].author
   }
-  // now w use props
-  return ( 
-    /* 
-    Multi
-    line
-    comment
-    // return JSX // Anything between curly braces will be executed as JS 
-    // count will update automatically
-    // set onclick attribute of button to custom function
-    // use curly braces to set onclick attribute to JS value
-    */  
-    <div class="greeting">
-      <h1>Hello {props.name}</h1>
-      <p>you clicked {count} times</p>
-      <button onClick={updateCount}>click me</button>
-    </div>
-  )
-}
 
-function GreetingApp () {
-  return ( /* A JSX comment // return JSX
-    // Use Greeting component in another component
-    */
-  <div>
-      <Greeting name="React" /> 
-      <div>
-        <Greeting name="Akiko" />
+  //generate diffrent quote function
+  generateRandomQuote = (arr) => {
+    //get random numbers
+    let num = Math.floor(Math.random() * quotes.length)
+
+    let newQuote = quotes[num];
+
+    //update state
+    this.setState({
+      quote: newQuote.quote,
+      author: newQuote.author
+    })
+
+    this.shuffleQuotes(quotes)
+
+  }
+
+  //shuufle quotes function
+  shuffleQuotes = (arr) => {
+    return arr.sort(function () { return 0.5 - Math.random() });
+  }
+
+  render() {
+    return (
+      <div className="container">
+        <h1 className="text-center">Random Quote</h1>
+        <QuoteAndAuthor
+          generateRandomQuote={this.generateRandomQuote}
+          quote={this.state}
+        />
       </div>
-    </div>
-  )  
+    )
+  }
 }
-
-// const App = () => <MyList items={DATA} /> 
-
-function App() {
-  return (
-    <div> 
-      <NormalCSS />
-      <InlineStyle></InlineStyle> 
-      <GreetingApp name="R" /> 
-      <MyList items={DATA} /> 
-    </div> 
-  )
-}
-
-function MyList(props) {
-  return (
-    <div> 
-      {
-	props.items.map(item => {
-	  return <p key={item.id}>{item.title}</p> 
-	})
-      }
-    < /div > 
-  )
-}
-
-export default App;

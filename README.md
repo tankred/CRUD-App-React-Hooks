@@ -60,8 +60,7 @@ Tankred
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* [Quote machine](https://dev.to/thinkc/build-a-random-quote-machine-with-react-41p4)
 
 
