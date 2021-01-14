@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.4] - 2021-01-14
+### Changed
+- Add users
+### Added
+- Add user form
+
 ## [0.5.3] - 2021-01-13
 ### Changed
 - Import data 
