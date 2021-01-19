@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.7] - 2021-01-19
+### Changed
+- Using the Effect Hook 
+- Enable delete on edited users
+
 ## [0.5.6] - 2021-01-18
 ### Changed
 - Update user

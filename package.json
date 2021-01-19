@@ -1,6 +1,6 @@
 {
   "name": "react-hooks",
-  "version": "0.5.2",
+  "version": "0.5.7",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",

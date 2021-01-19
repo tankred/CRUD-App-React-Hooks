@@ -10,7 +10,6 @@ const App = () => {
     { id: 3, name: 'Ben', username: 'benisphere' },
   ]
 
-  // eslint-disable-next-line
   const [users, setUsers] = useState(usersData)
   
   const [editing, setEditing] = useState(false)
@@ -31,6 +30,7 @@ const App = () => {
   }
 
   const deleteUser = (id) => {
+    setEditing(false)
     setUsers(users.filter((user) => user.id !== id))
   }
 
