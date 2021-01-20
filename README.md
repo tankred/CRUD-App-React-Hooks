@@ -60,8 +60,7 @@ Tankred
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+* [Simple CRUD app](https://www.taniarascia.com/crud-app-in-react-with-hooks/#state-vs-hook-state)
 
 

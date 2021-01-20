@@ -6,6 +6,41 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.7] - 2021-01-19
+### Changed
+- Using the Effect Hook 
+- Enable delete on edited users
+
+## [0.5.6] - 2021-01-18
+### Changed
+- Update user
+
+## [0.5.5] - 2021-01-15
+### Changed
+- Delete user
+
+## [0.5.4] - 2021-01-14
+### Changed
+- Add users
+### Added
+- Add user form
+
+## [0.5.3] - 2021-01-13
+### Changed
+- Import data 
+
+## [0.5.2] - 2021-01-12
+### Added
+- User table
+
+## [0.5.1] - 2021-01-11
+### Changed
+- Initial setup and skeleton for the CRUD app
+
+## [0.5.0] - 2021-01-08
+### Changed
+- Add tutorial simple CRUD app 
+
 ## [Released]
 
 ## [0.4.0] - 2020-12-14
