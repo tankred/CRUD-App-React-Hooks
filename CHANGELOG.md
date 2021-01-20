@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [Released]
+
+## [0.6.0] - 2021-01-20
+### Changed
+- Merge simpleCRUD
+
 ## [0.5.7] - 2021-01-19
 ### Changed
 - Using the Effect Hook 
@@ -40,8 +46,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.5.0] - 2021-01-08
 ### Changed
 - Add tutorial simple CRUD app 
-
-## [Released]
 
 ## [0.4.0] - 2020-12-14
 ### Changed
